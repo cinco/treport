@@ -119,7 +119,7 @@ var getStartDate=function(time){
         startDate.setDate(startDate.getDate()-startDate.getDay()+1);//we need it to start on Monday
     }
     if (time=="Monthly"){
-        startDate.setDate(startDate.getDate()-startDate.getDay()+30);//we need it to start on Monday
+        startDate.setDate(startDate.getDate()-startDate.getDay()-30);//we need it to start on Monday
     }
     startDate.setUTCHours(0);
     startDate.setMinutes(0);
